@@ -13,12 +13,12 @@ echo "$OS"
 case $OS in
 	"Arch Linux")
 		echo 'Installing with pacman...'
-		sudo pacman -S neovim tmux
+		sudo pacman -S neovim tmux git
 		;;
 		
 	"Ubuntu")
 		echo 'Installing with apt...'
-		sudo apt install neovim tmux
+		sudo apt install neovim tmux git
 		;;
 
 	*)
@@ -29,4 +29,3 @@ case $OS in
 esac
 
 echo 'Done!'
-
