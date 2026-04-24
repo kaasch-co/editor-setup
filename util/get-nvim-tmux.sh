@@ -29,6 +29,7 @@ case $OS in
 		mkdir $TEMPDIR
 		curl -L $NVIM_URL | tar -zx -C $TEMPDIR
 		sudo cp -R $SUBDIR/* /usr
+		rm -Rf $TEMPDIR
 		;;
 
 	*)
