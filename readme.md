@@ -14,6 +14,9 @@ paths
 * Ubuntu / noble / questing
 * Arch Linux
 
+*Pacman and Apt is used for installing packages on the respective platforms; **EXCEPT** for neovim on ubuntu!
+On Ubuntu, neovim is just manually extracted and copied into place using the latest release*
+
 ### Usage
 In most cases just:
 ~~~
