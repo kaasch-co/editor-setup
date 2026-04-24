@@ -17,12 +17,15 @@ echo "$OS"
 case $OS in
 	"Arch Linux")
 		echo 'Installing with pacman...'
-		sudo pacman -S --needed neovim tmux git
+		sudo pacman -S --needed neovim tmux git unzip
 		;;
 		
 	"Ubuntu" | "noble")
 		echo 'Installing with apt...'
-		sudo apt install tmux git
+		sudo apt install tmux git unzip
+
+		# Manual install because some ubuntu installs
+		# may not have updated packages sources
 		mkdir $TEMPDIR
 		curl -L $NVIM_URL | tar -zx -C $TEMPDIR
 		sudo cp -R $SUBDIR/* /usr
