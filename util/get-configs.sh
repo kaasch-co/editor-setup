@@ -11,6 +11,6 @@ cp -r $TEMP_DIR/nvim $CONF_DIR
 cp -r $TEMP_DIR/tmux $CONF_DIR
 
 echo "Removing cloned repo..."
-rm -rdI $TEMP_DIR
+rm -R $TEMP_DIR
 
 echo "Done!"
